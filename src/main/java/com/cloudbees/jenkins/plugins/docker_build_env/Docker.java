@@ -330,9 +330,9 @@ public class Docker implements Closeable {
         List<String> prefix = dockerCommandArgs();
         prefix.add("exec");
         prefix.add("--tty");
-        prefix.add("--user");
-        prefix.add(userId);
-        prefix.add(container);
+        //prefix.add("--user");
+        //prefix.add(userId);
+        //prefix.add(container);
         prefix.add("env");
 
         // Build a list of environment, hidding node's one
